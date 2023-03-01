@@ -34,6 +34,7 @@ footer {
   color: #a351ff;
   font-weight: bold;
 }
+
 .social-link {
   color: white;
   margin-top: 0.5rem;
@@ -107,4 +108,22 @@ a:focus {
   .hamburger {
     display: none;
   }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.tag {
+  margin: 0.25em;
+  font-size: 1.15em;
+  padding: 0.5em 1em;
+  background-color: #f8fcfd;
+  border: dotted 1px #ff02ef;
+}
+
+.tag-link {
+  color: #a351ff;
 }
