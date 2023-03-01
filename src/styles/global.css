@@ -30,6 +30,10 @@ footer {
   justify-content: center;
 }
 
+.skill {
+  color: #a351ff;
+  font-weight: bold;
+}
 .social-link {
   color: white;
   margin-top: 0.5rem;
