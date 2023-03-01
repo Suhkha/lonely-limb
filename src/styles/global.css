@@ -1,13 +1,13 @@
 html {
-  background-color: #f1f5f9;
   font-family: sans-serif;
+  background-color: #f1f5f9;
 }
 
 body {
-  margin: 0 auto;
   width: 100%;
-  max-width: 80ch;
   padding: 1rem;
+  margin: 0 auto;
+  max-width: 80ch;
   line-height: 1.5;
 }
 
@@ -16,27 +16,40 @@ body {
 }
 
 h1 {
-  color: #ff02ef;
   margin: 1rem 0;
+  color: #ff02ef;
   font-size: 2.5rem;
 }
 
 footer {
   display: flex;
-  flex-direction: column;
   margin-top: 2rem;
   flex-wrap: nowrap;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 
 .social-link {
-  display: inline-block;
-  padding: 0.5rem 1rem;
   color: white;
-  background-color: #a351ff;
-  text-decoration: none;
   margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #a351ff;
+}
+
+.hamburger {
+  cursor: pointer;
+  padding-right: 20px;
+}
+
+.hamburger .line {
+  width: 40px;
+  height: 5px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: #a351ff;
 }
 
 /* nav styles */
@@ -51,19 +64,22 @@ footer {
 }
 
 .nav-links a {
-  display: block;
-  text-align: center;
   padding: 5px 0;
-  text-decoration: none;
+  display: block;
+  color: white;
   font-size: 1rem;
   font-weight: bold;
+  text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
+  background-color: #a351ff;
+  border: solid 2px #a351ff;
 }
 
 .nav-links a:hover,
 a:focus {
-  background-color: white;
   color: #a351ff;
+  background-color: white;
   border: solid 2px #a351ff;
 }
 
@@ -73,20 +89,18 @@ a:focus {
 
 @media screen and (min-width: 636px) {
   .nav-links {
+    width: auto;
     display: block;
     position: static;
-    width: auto;
     background: none;
   }
 
   .nav-links a {
-    background-color: #a351ff;
-    color: white;
-    border: solid 2px #a351ff;
+    padding: 10px 15px;
+    display: inline-block;
   }
 
-  .nav-links a {
-    display: inline-block;
-    padding: 10px 15px;
+  .hamburger {
+    display: none;
   }
 }
