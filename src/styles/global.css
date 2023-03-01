@@ -11,6 +11,15 @@ body {
   line-height: 1.5;
 }
 
+html.dark {
+  background-color: #160231;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -126,4 +135,25 @@ a:focus {
 
 .tag-link {
   color: #a351ff;
+}
+
+#themeToggle {
+  border: 0;
+  float: right;
+  cursor: pointer;
+  background: none;
+}
+
+.sun {
+  fill: #a351ff;
+}
+.moon {
+  fill: transparent;
+}
+
+.dark .sun {
+  fill: transparent;
+}
+.dark .moon {
+  fill: white;
 }
