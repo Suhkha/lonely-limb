@@ -24,6 +24,10 @@ html.dark {
   box-sizing: border-box;
 }
 
+a {
+  color: #a351ff;
+}
+
 h1 {
   margin: 1rem 0;
   color: #ff02ef;
@@ -93,7 +97,7 @@ footer {
 .nav-links a:hover,
 a:focus {
   color: #a351ff;
-  background-color: white;
+  background-color: transparent;
   border: solid 2px #a351ff;
 }
 
